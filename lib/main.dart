@@ -2,7 +2,8 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app_badger/flutter_app_badger.dart';
-import 'package:public_event_list/features/sample_feature/presentation/flow_1/starting_page.dart';
+import 'package:public_event_list/features/sample_feature/presentation/flow_4/change_name_screen.dart';
+import 'package:public_event_list/features/sample_feature/presentation/logging/starting_page.dart';
 import 'package:public_event_list/features/sample_feature/presentation/flow_2/main_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'dart:io';
@@ -57,6 +58,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/',
       routes: {
         '/': (context) => const StartingPage(),
+        '/changetext': (context) => const ChangingTextScreen(),
       },
       debugShowCheckedModeBanner: false,
       builder: BotToastInit(),
